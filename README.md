@@ -75,7 +75,7 @@ puts response_contact
 
 #### Add a Tag to a Contact
 ```ruby
-response_add_tag = Yonoma::Contacts.add_tag("Contact Id", {
+response_add_tag = Yonoma::Contacts.addTag("Contact Id", {
   "tag_id" : "Tag Id"
 })
 puts response_add_tag
@@ -83,7 +83,7 @@ puts response_add_tag
 
 #### Remove a Tag from a Contact
 ```ruby
-response_remove_tag = Yonoma::Contacts.remove_tag("Contact Id", {
+response_remove_tag = Yonoma::Contacts.removeTag("Contact Id", {
   "tag_id" : "Tag Id"
 })
 puts response_remove_tag
