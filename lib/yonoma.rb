@@ -5,7 +5,7 @@ require_relative "yonoma/client"
 require_relative "yonoma/contacts"
 require_relative "yonoma/lists"
 require_relative "yonoma/tags"
-require_relative "yonoma/mail"
+require_relative "yonoma/email"
 
 module Yonoma
   class Error < StandardError; end

@@ -35,7 +35,7 @@ Yonoma.api_key = 'api_key'
 ### Usage
 #### Send your email:
 ```ruby
-response_email = Yonoma::Mail.send({
+response_email = Yonoma::Email.send({
     "from_email":"updates@yonoma.io",
     "to_email":"email@yourdomain.com",
     "subject":"Welcome to Yonoma - You're In!",
