@@ -32,8 +32,17 @@ require 'yonoma'
 Yonoma.api_key = 'api_key'
 ```
 
-## Usage
-
+### Usage
+#### Send your email:
+```ruby
+response_email = Yonoma::Mail.send({
+    "from_email":"updates@yonoma.io",
+    "to_email":"email@yourdomain.com",
+    "subject":"Welcome to Yonoma - You're In!",
+    "mail_template": "We're excited to welcome you to Yonoma! Your successful signup marks the beginning of what we hope will be an exceptional journey."
+})
+puts response_email
+```
 ### Managing Contacts
 
 #### Create a Contact
