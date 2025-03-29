@@ -17,7 +17,7 @@ module Yonoma
       end
   
       def self.delete(tag_id)
-        Client.request(:post, "/tags/#{tag_id}/delete")
+        Client.request(:delete, "/tags/#{tag_id}/delete")
       end
     end
 end
