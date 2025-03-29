@@ -17,7 +17,7 @@ module Yonoma
       end
   
       def self.delete(list_id)
-        Client.request(:post, "/lists/#{list_id}/delete")
+        Client.request(:delete, "/lists/#{list_id}/delete")
       end
     end
   end
