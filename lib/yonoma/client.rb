@@ -30,6 +30,8 @@ module Yonoma
 
       request["Authorization"] = "Bearer #{Yonoma.api_key}"
       request["Content-Type"] = "application/json"
+      request["User-agent"] = "yonoma-ruby:#{Yonoma::VERSION}"
+      
       request.body = params.to_json unless method == :get
 
       response = http.request(request)
